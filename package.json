@@ -2,8 +2,10 @@
   "name": "pokedex",
   "version": "1.0.0",
   "description": "",
+  "homepage": "http://SVegaDoLugar.github.io/Pokedex",
   "main": "src/index.js",
   "scripts": {
+    "deploy": "gh-pages -d dist",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack serve --open",
     "build": "webpack --mode production"
@@ -15,6 +17,7 @@
   "author": "Samuel Vega",
   "license": "MIT",
   "dependencies": {
+    "gh-pages": "^3.2.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-router-dom": "^6.2.1"
