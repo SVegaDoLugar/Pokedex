@@ -1,0 +1,339 @@
+@use '../App.scss';
+.Pokedex{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: var(--font-Pokedex);
+    width: 100vw;
+    height: auto;
+}
+.Pokedex__section{
+    width: 25vw;
+    height: 20vh;
+    border:solid 0.1rem black;
+    border-collapse: separate;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 95, 95, 0.5);
+}
+.Pokedex__tittle{
+    color: var(--textColor-Pokedex);
+    font-size: 1rem;
+    width: 20vw;
+}
+.Pokedex__tittle2{
+    color: var(--textColor-Pokedex);
+    font-size: 1.5rem;
+}
+
+.Pokedex__RegionImg{
+    width: 75vw;
+    border: solid 1rem rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 0.5rem;
+    object-fit: cover;
+    padding: 0;
+}
+.Pokedex__picture{
+    width: 25vw;
+}
+.Pokedex__img{
+    max-width: 20vw;
+    max-height: 15vh;
+}
+.Pokedex__tittleRegion{
+    width: 100vw;
+    color: var(--textColor-Pokedex);
+    font-size: 2rem;
+    background-color: var(--font-Pokedex-dark);
+}
+.Pokedex__button{
+    width: 15vw;
+    margin: 2vw;
+    background-color: var(--font-Pokedex-dark);
+    color: var(--textColor-Pokedex);
+    border: solid 1 rem black;
+    font-size: 1rem;
+}
+.Pokemon{
+    background-color: rgba(0, 0, 0, 0.37);
+}
+.Pokemon__header{
+    width: 100vw;
+    margin-top: 2rem;
+    align-items: center;
+}
+.Pokemon__images{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.Pokemon__images__block{
+    width: 25vw;
+}
+.Pokemon__images__block__img{
+    width: 25vw;
+}
+
+.Pokemon__mainTittle{
+    font-size: 2rem;
+    color: var(--textColor-Pokedex);
+}
+.Pokemon__h1{
+    color: var(--textColor-Pokedex);
+    font-size: 1.5rem;
+}
+.Pokemon__h1__statistics{
+    color: var(--textColor-Pokedex);
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+}
+.Pokemon__p{
+    color: var(--textColor-Pokedex);
+    font-size: 1.25rem;
+}
+.Pokemon__main__description_and_statistics{
+    width: 100vw;
+    display: flex;
+    margin-top: 2rem;
+}
+.Pokemon__description__1{
+    width: 50vw;
+}
+.Pokemon__description__2{
+    width: 50vw;
+}
+.Pokemon__description{
+    width: 50vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.Pokemon__description__1__weight{
+    margin-bottom: 1rem;
+}
+.Pokemon__statistics{
+    width: 50vw;
+}
+.Pokemon__statistics__section{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.Pokemon__images__h1{
+    width: 25vw;
+    font-size: 1.25rem;
+    color: var(--textColor-Pokedex);
+}
+.Pokemon__tittle__type{
+    font-size: 2rem;
+    color: white;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.Pokemon__types{
+    width: 100vw;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.Pokemon__types__h1{
+    border-radius: 2rem;
+    width: 25vw;
+    font-size: 1.5rem;
+    border: solid 0.25rem;
+    margin: 0 1rem;
+    color: white;
+    border-color: white;
+}
+.bug{
+    background-color: #778500;
+}
+.dark{
+    background-color: #131313;
+}
+.dragon{
+    background-color: #1c0097;
+}
+.electric{
+    background-color: rgb(255, 255, 27);
+    color: black;
+    border-color: black;
+}
+.fairy{
+    background-color: #df62d8;
+}
+.fighting{
+    background-color: #922200;
+}
+.fire{
+    background-color: #ff2a00;
+}
+.flying{
+    background-color: #6787b9;
+}
+.ghost{
+    background-color: #261563;
+}
+.grass{
+    background-color: #2a6400;
+}
+.ground{
+    background-color: #d39b00;
+}
+.ice{
+    background-color: #00d0ff;
+}
+.normal{
+    background-color: #646163;
+}
+.poison{
+    background-color: #7a1d63;
+}
+.psychic{
+    background-color: #fc3e7d;
+}
+.rock{
+    background-color: #8d752b;
+}
+.steel{
+    background-color: #646163;
+}
+.water{
+    background-color: #005db4;
+}
+@media only screen and (min-width: 550px){
+    .Pokedex__section{
+        width: 20vw;
+        height: 21.5vh;
+    }
+    .Pokedex__tittle{
+        font-size: 1.25rem;
+    }
+    .Pokedex__tittle2{
+        color: var(--textColor-Pokedex);
+        font-size: 1.75rem;
+    }
+    .Pokedex__RegionImg{
+        width: 80vw;
+    }
+    .Pokedex__picture{
+        width: 20vw;
+    }
+    .Pokedex__img{
+        max-width: 19.5vw;
+        max-height: 18.5vh;
+    }
+    .Pokedex__tittleRegion{
+        font-size: 2rem;
+    }
+    .Pokedex__button{
+        width: 17.5vw;
+        font-size: 1.25rem;
+    }
+    .Pokemon__h1{
+        font-size: 1.5rem;
+    }
+    .Pokemon__p{
+        font-size: 1.5rem;
+    }
+    .Pokemon__images__h1{
+        font-size: 1.5rem;
+    }
+    .Pokemon__h2{
+        font-size: 1.25rem;
+    }
+    .Pokemon__types__h1{
+        font-size: 2rem;
+    }
+}
+@media only screen and (min-width: 800px){
+    .Pokedex__section{
+        width: 20vw;
+        height: 30vh;
+    }
+    .Pokedex__tittle{
+        font-size: 1.75rem;
+    }
+    .Pokedex__tittle2{
+        font-size: 2rem;
+    }
+    .Pokedex__button{
+        font-size: 1.6rem;
+    }
+    .Pokedex__img{
+        width: 18vw;
+        max-width: 20vw;
+        max-height: 26.5vh;
+    }
+    .Pokemon__mainTittle{
+        font-size: 2.5rem;
+    }
+    .Pokemon__h1{
+        font-size: 1.75rem;
+    }
+    .Pokemon__tittle__type{
+        font-size: 2.5rem;
+    }
+    .Pokemon__h1__statistics{
+        font-size: 2rem;
+    }
+    .Pokemon__p{
+        font-size: 1.75rem;
+    }
+    .Pokemon__images__h1{
+        font-size: 1.75rem;
+    }
+    .Pokemon__h2{
+        font-size: 1.75rem;
+    }
+    .Pokemon__types__h1{
+        font-size: 2rem;
+    }
+}
+@media only screen and (min-width: 950px){
+    .Pokedex__section{
+        width: 12.5vw;
+        height: 35vh;
+    }
+    .Pokedex__tittle{
+        font-size:2rem;
+    }
+    .Pokedex__picture{
+        width: 12.5vw;
+    }
+    .Pokedex__img{
+        max-width: 12.25vw;
+        max-height: 26.5vh;
+    }
+    .Pokemon__h1{
+        font-size: 2.75rem;
+    }
+    .Pokemon__mainTittle{
+        font-size: 3rem;
+    }
+    .Pokemon__tittle__type{
+        font-size: 3rem;
+    }
+    .Pokemon__h1__statistics{
+        font-size: 3rem;
+    }
+    .Pokemon__p{
+        font-size: 2.75rem;
+    }
+    .Pokemon__images__h1{
+        font-size: 2.75rem;
+    }
+    .Pokemon__types__h1{
+        font-size: 3rem;
+    }
+}

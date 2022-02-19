@@ -1,0 +1,14 @@
+@use '../App.scss';
+.Header{
+    width: 100vw;
+    height: 5vh;
+    text-align: center;
+    display: flex;
+	align-items: center;
+    justify-content: center;
+    background-color: var(--font-Pokedex-dark);
+    color: var(--textColor-Pokedex);
+}
+.Header__img{
+    height: 4vh;
+}

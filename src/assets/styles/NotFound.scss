@@ -1,0 +1,24 @@
+@use './App.scss';
+.NotFound{
+    height: 77.5vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+}
+.NotFound__h1{
+    font-size: 2rem;
+    color: white;
+}
+.NotFound__img{
+    height: 40vh;
+}
+@media only screen and (min-width: 550px){
+    .NotFound{
+        height: 81.5vh;
+    }
+    .NotFound__h1{
+        font-size: 4rem;
+    }
+}

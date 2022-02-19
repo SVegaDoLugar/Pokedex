@@ -1,0 +1,76 @@
+@use '../App.scss';
+.Footer{
+    width: 100vw;
+    height: 8vh;
+    text-align: center;
+	align-items: center;
+    background-color: var(--font-Pokedex-dark);
+    color: var(--textColor-Pokedex);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.Footer__section{
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Footer__paragraph{
+    font-size: 1.25rem;
+    text-decoration: none;
+    color: var(--textColor-Pokedex);
+
+}
+.Footer__img img{
+    height: 4vh;
+    margin: 0 0.5rem;
+    
+}
+.Footer2__imgSpin img{
+    height: 4vh;
+    animation: App-logo-spin infinite 20s linear;
+    margin: 0 0.5rem;
+}
+.Footer2{
+    width: 100vw;
+    height: 5vh;
+    background-color: rgb(37, 0, 0);
+    color: var(--textColor-Pokedex);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Footer3{
+    width: 100vw;
+    height: 4.5vh;
+    background-color: rgb(37, 0, 0);
+    color: var(--textColor-Pokedex);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.Footer3__paragraph{
+    font-size: 1rem;
+    text-decoration: none;
+    color: var(--textColor-Pokedex);
+}
+@media only screen and (min-width: 550px){
+    .Footer{
+        height: 4vh;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+    .Footer__section{
+        width: 25vw;
+    }
+}
+@media only screen and (min-width: 800px){
+    .Footer__paragraph{
+        font-size: 1.6rem;
+    }
+    .Footer3__paragraph{
+        font-size: 1.3rem;
+    }
+}
