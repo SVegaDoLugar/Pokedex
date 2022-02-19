@@ -2,7 +2,7 @@
   "name": "pokedex",
   "version": "1.0.0",
   "description": "",
-  "homepage": "http://SVegaDoLugar.github.io/Pokedex",
+  "homepage": "https://SVegaDoLugar.github.io/Pokedex",
   "main": "src/index.js",
   "scripts": {
     "deploy": "gh-pages -d dist",
