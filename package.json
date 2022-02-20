@@ -4,7 +4,7 @@
   "description": "",
   "homepage": "https://SVegaDoLugar.github.io/Pokedex",
   "main": "src/index.js",
-  "private":"false",
+  "private": "false",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
