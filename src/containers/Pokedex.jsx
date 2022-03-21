@@ -130,19 +130,23 @@ const Pokedex = () => {
                 </picture>
             </section>
             <h1 className="Pokedex__tittleRegion">{region} Pok&eacute;Dex:</h1>
-            {pokemonDefinitiveList.map(pokemon =>(
-                <section className="Pokedex__section" key={pokemon.name}>
-                    <h1 className="Pokedex__tittle">{Capitalize(pokemon.name)}</h1>
-                    <picture 
-                        className="Pokedex__picture"
-                        onClick={() => handlePokVis(pokemon.name)}
-                    >
-                        <img
-                            className="Pokedex__img"
-                            src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemonDefinitiveList.indexOf(pokemon)+1+offset}.png`}/>
-                    </picture>
-                </section> 
-            ))}
+            <section className="Pokedex__main__section">
+                <section className='Pokedex__main__section__function'>
+                    {pokemonDefinitiveList.map(pokemon =>(
+                        <section className="Pokedex__section" key={pokemon.name}>
+                            <h1 className="Pokedex__tittle">{Capitalize(pokemon.name)}</h1>
+                            <picture 
+                                className="Pokedex__picture"
+                                onClick={() => handlePokVis(pokemon.name)}
+                            >
+                                <img
+                                    className="Pokedex__img"
+                                    src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemonDefinitiveList.indexOf(pokemon)+1+offset}.png`}/>
+                            </picture>
+                        </section> 
+                    ))}
+                </section>
+            </section>
             {visualize.map(items =>(
                 <Pokemon className="Pokemon"key={items.id}>
                     <section className='Pokemon__header'>
@@ -199,32 +203,32 @@ const Pokedex = () => {
                         <section className='Pokemon__statistics'>
                             <h1 className="Pokemon__h1__statistics">Statistics:</h1>
                             <section className='Pokemon__statistics__section'>
-                                <h1 className="Pokemon__h1">Base Health:</h1>
-                                <p className='Pokemon__p'>{items.stats[0].base_stat}</p>
+                                <h1 className="Pokemon__h1">Base Health</h1>
+                                <p className='Pokemon__p'>:{' '}{items.stats[0].base_stat}</p>
                             </section>
                             <section className='Pokemon__statistics__section'>
-                                <h1 className="Pokemon__h1">Base Experience:</h1>
-                                <p className='Pokemon__p'>{items.base_experience}</p>
+                                <h1 className="Pokemon__h1">Base Experience</h1>
+                                <p className='Pokemon__p'>:{' '}{items.base_experience}</p>
                             </section>
                             <section className='Pokemon__statistics__section'>
-                                <h1 className="Pokemon__h1">Base Attack:</h1>
-                                <p className='Pokemon__p'>{items.stats[1].base_stat}</p>
+                                <h1 className="Pokemon__h1">Base Attack</h1>
+                                <p className='Pokemon__p'>:{' '}{items.stats[1].base_stat}</p>
                             </section>
                             <section className='Pokemon__statistics__section'>
-                                <h1 className="Pokemon__h1">Base Defense:</h1>
-                                <p className='Pokemon__p'>{items.stats[2].base_stat}</p>
+                                <h1 className="Pokemon__h1">Base Defense</h1>
+                                <p className='Pokemon__p'>:{' '}{items.stats[2].base_stat}</p>
                             </section>
                             <section className='Pokemon__statistics__section'>
-                                <h1 className="Pokemon__h1">Special Attack:</h1>
-                                <p className='Pokemon__p'>{items.stats[3].base_stat}</p>
+                                <h1 className="Pokemon__h1">Special Attack</h1>
+                                <p className='Pokemon__p'>:{' '}{items.stats[3].base_stat}</p>
                             </section>
                             <section className='Pokemon__statistics__section'>
-                                <h1 className="Pokemon__h1">Special Defense:</h1>
-                                <p className='Pokemon__p'> {items.stats[4].base_stat}</p>
+                                <h1 className="Pokemon__h1">Special Defense</h1>
+                                <p className='Pokemon__p'>:{' '}{items.stats[4].base_stat}</p>
                             </section>
                             <section className='Pokemon__statistics__section'>
-                                <h1 className="Pokemon__h1">Speed:</h1>
-                                <p className='Pokemon__p'>{items.stats[5].base_stat}</p>
+                                <h1 className="Pokemon__h1">Speed</h1>
+                                <p className='Pokemon__p'>:{' '}{items.stats[5].base_stat}</p>
                             </section>
                             
                         </section>

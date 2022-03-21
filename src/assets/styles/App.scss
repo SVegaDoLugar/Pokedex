@@ -5,15 +5,13 @@
 }
 html{
     font-size: 62.5%;
-
-}
-body{
-    
+    max-width: 100vw;
 }
 :root{
 --font-Pokedex: red;
 --textColor-Pokedex: white;
---font-Pokedex-dark: rgb(88, 0, 0);
+--textColor-Pokedex-dark: black;
+--font-Pokedex-dark: rgb(163, 0, 0);
 @keyframes App-logo-spin {
     from {
       transform: rotate(0deg);

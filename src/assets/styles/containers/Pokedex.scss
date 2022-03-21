@@ -1,85 +1,107 @@
 @use '../App.scss';
+.MainFooter{
+    background-color: rgb(37, 0, 0);
+}
 .Pokedex{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     text-align: center;
     justify-content: center;
-    background-color: var(--font-Pokedex);
-    width: 100vw;
+    background-size: 25vw;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/5/51/Pokebola-pokeball-png-0.png);
     height: auto;
+}
+.Pokedex__changeRegion{
+    background-color: rgba(255, 255, 255, 0.75);
+}
+.Pokedex__main__section{
+    //background-image: url(https://i.pinimg.com/564x/98/c1/5a/98c15a449a1166ec23f5c9f1f63995dd.jpg);
+    border-bottom: solid 1rem var(--font-Pokedex-dark);
+}
+.Pokedex__main__section__function{
+    background: rgba(255, 255, 255, 0.85);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .Pokedex__section{
     width: 25vw;
-    height: 20vh;
-    border:solid 0.1rem black;
+    height: auto;
     border-collapse: separate;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    background-color: rgba(255, 95, 95, 0.5);
+    background: none;
+    //border-bottom: 0.1rem solid rgb(170, 170, 170);
+    padding: 0.5rem;
 }
 .Pokedex__tittle{
-    color: var(--textColor-Pokedex);
+    color: var(--textColor-Pokedex-dark);
     font-size: 1rem;
     width: 20vw;
 }
 .Pokedex__tittle2{
-    color: var(--textColor-Pokedex);
+    color: var(--font-Pokedex-dark);
     font-size: 1.5rem;
 }
 
 .Pokedex__RegionImg{
     width: 75vw;
-    border: solid 1rem rgba(255, 255, 255, 0.5);
-    background-color: rgba(255, 255, 255, 0.5);
+    border: solid 1rem var(--font-Pokedex-dark);
+    background-color: var(--font-Pokedex-dark);
     border-radius: 0.5rem;
     object-fit: cover;
     padding: 0;
 }
 .Pokedex__picture{
-    width: 25vw;
+    width: auto;
 }
 .Pokedex__img{
     max-width: 20vw;
-    max-height: 15vh;
+    
 }
 .Pokedex__tittleRegion{
     width: 100vw;
     color: var(--textColor-Pokedex);
     font-size: 2rem;
     background-color: var(--font-Pokedex-dark);
+    border-bottom: solid 0.25rem rgb(199, 199, 199);
 }
 .Pokedex__button{
-    width: 15vw;
+    max-width: 15vw;
     margin: 2vw;
     background-color: var(--font-Pokedex-dark);
     color: var(--textColor-Pokedex);
     border: solid 1 rem black;
     font-size: 1rem;
 }
-.Pokemon{
-    background-color: rgba(0, 0, 0, 0.37);
+.Pokedex__button:hover{
+    background-color: var(--font-Pokedex);
+    color: white;
+    font-weight: bold;
+}
+.Pokemon{ 
+    background-size: 25vw;
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 1));
 }
 .Pokemon__header{
-    width: 100vw;
     margin-top: 2rem;
     align-items: center;
 }
 .Pokemon__images{
-    width: 100vw;
     height: auto;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
     justify-content: center;
     margin-top: 2rem;
 }
-.Pokemon__images__block{
-    width: 25vw;
-}
+
 .Pokemon__images__block__img{
-    width: 25vw;
+    width: 22.5vw;
 }
 
 .Pokemon__mainTittle{
@@ -100,18 +122,17 @@
     font-size: 1.25rem;
 }
 .Pokemon__main__description_and_statistics{
-    width: 100vw;
     display: flex;
     margin-top: 2rem;
 }
 .Pokemon__description__1{
-    width: 50vw;
+    width: 100%;
 }
 .Pokemon__description__2{
-    width: 50vw;
+    width: 100%;
 }
 .Pokemon__description{
-    width: 50vw;
+    width: 50%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -130,7 +151,6 @@
     justify-content: center;
 }
 .Pokemon__images__h1{
-    width: 25vw;
     font-size: 1.25rem;
     color: var(--textColor-Pokedex);
 }
@@ -141,7 +161,7 @@
     margin-bottom: 1rem;
 }
 .Pokemon__types{
-    width: 100vw;
+    
     align-items: center;
     display: flex;
     justify-content: center;
@@ -214,13 +234,11 @@
 @media only screen and (min-width: 550px){
     .Pokedex__section{
         width: 20vw;
-        height: 21.5vh;
     }
     .Pokedex__tittle{
         font-size: 1.25rem;
     }
     .Pokedex__tittle2{
-        color: var(--textColor-Pokedex);
         font-size: 1.75rem;
     }
     .Pokedex__RegionImg{
@@ -231,7 +249,7 @@
     }
     .Pokedex__img{
         max-width: 19.5vw;
-        max-height: 18.5vh;
+        
     }
     .Pokedex__tittleRegion{
         font-size: 2rem;
@@ -240,6 +258,7 @@
         width: 17.5vw;
         font-size: 1.25rem;
     }
+    
     .Pokemon__h1{
         font-size: 1.5rem;
     }
@@ -259,7 +278,6 @@
 @media only screen and (min-width: 800px){
     .Pokedex__section{
         width: 20vw;
-        height: 30vh;
     }
     .Pokedex__tittle{
         font-size: 1.75rem;
@@ -273,7 +291,6 @@
     .Pokedex__img{
         width: 18vw;
         max-width: 20vw;
-        max-height: 26.5vh;
     }
     .Pokemon__mainTittle{
         font-size: 2.5rem;
@@ -303,7 +320,7 @@
 @media only screen and (min-width: 950px){
     .Pokedex__section{
         width: 12.5vw;
-        height: 35vh;
+
     }
     .Pokedex__tittle{
         font-size:2rem;
@@ -313,7 +330,6 @@
     }
     .Pokedex__img{
         max-width: 12.25vw;
-        max-height: 26.5vh;
     }
     .Pokemon__h1{
         font-size: 2.75rem;
